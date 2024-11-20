@@ -23,21 +23,21 @@ const NavBar = () => {
         !top && "bg-white shadow-lg"
       }`}
     >
-      <div className="flex flex-row justify-between items-center py-2">
-        <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
+      <div className="flex flex-row items-center justify-between py-2">
+        <div className="flex flex-row items-center justify-center font-semibold text-center md:px-12 md:mx-12">
           <Link to="/">
-            <h1 className="font-extrabold text-4xl text-blue-900">
-              VertiVision Ventures
+            <h1 className="text-4xl font-extrabold text-blue-900">
+              Sales Compass
             </h1>
           </Link>
         </div>
-        <div className="group flex flex-col items-center">
+        <div className="flex flex-col items-center group">
           <button
-            className="p-2 rounded-lg lg:hidden text-blue-900"
+            className="p-2 text-blue-900 rounded-lg lg:hidden"
             onClick={handleClick}
           >
             <svg
-              className="h-6 w-6 fill-current"
+              className="w-6 h-6 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -56,7 +56,7 @@ const NavBar = () => {
               )}
             </svg>
           </button>
-          <div className="hidden space-x-6 lg:inline-block p-5">
+          <div className="hidden p-5 space-x-6 lg:inline-block">
             <NavLinks />
           </div>
 
