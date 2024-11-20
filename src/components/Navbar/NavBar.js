@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import NavLinks from "../Navbar/NavLinks";
+import logo from "D:/New folder/sales_compass/src/images/logo.png"
 
 const NavBar = () => {
   const [top, setTop] = useState(true);
@@ -24,13 +25,25 @@ const NavBar = () => {
       }`}
     >
       <div className="flex flex-row items-center justify-between py-2">
+        {/* Logo Section */}
         <div className="flex flex-row items-center justify-center font-semibold text-center md:px-12 md:mx-12">
-          <Link to="/">
+          <Link to="/" className="flex items-center space-x-3">
+            {/* Logo with Circular Border */}
+            <div className="flex items-center justify-center border-4 border-blue-900 rounded-full">
+              <img
+                src={logo}// Update the path to your logo image
+                alt="Sales Compass Logo"
+                className="w-20 h-20 rounded-full" // Ensure the logo is round
+              />
+            </div>
+            {/* Site Title */}
             <h1 className="text-4xl font-extrabold text-blue-900">
               Sales Compass
             </h1>
           </Link>
         </div>
+
+        {/* Navigation Links */}
         <div className="flex flex-col items-center group">
           <button
             className="p-2 text-blue-900 rounded-lg lg:hidden"
@@ -51,7 +64,7 @@ const NavBar = () => {
               {!isOpen && (
                 <path
                   fillRule="evenodd"
-                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"
                 />
               )}
             </svg>
