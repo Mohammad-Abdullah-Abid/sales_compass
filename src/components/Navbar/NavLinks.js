@@ -1,34 +1,17 @@
 import React from "react";
 import { useNavigate, useLocation, Link } from "react-router-dom"; // Navigation and routing
-import { scroller } from "react-scroll"; // Smooth scrolling
+import { handleNavigateAndScroll } from "../../utils/scrollUtils";
 
 const NavLinks = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
-  // Function to handle scrolling and navigation
-  const handleNavigateAndScroll = (section) => {
-    if (location.pathname !== "/") {
-      // Navigate to the home page first
-      navigate("/");
-    }
-
-    // Delay to ensure the navigation is completed
-    setTimeout(() => {
-      scroller.scrollTo(section, {
-        smooth: true,
-        duration: 500,
-        offset: -70, // Offset for sticky navbar height
-      });
-    }, 100); // Adjust delay if needed
-  };
 
   return (
     <>
       {/* Smooth scroll to About */}
       <span
         className="px-4 font-extrabold text-gray-500 hover:text-blue-900 cursor-pointer"
-        onClick={() => handleNavigateAndScroll("about")}
+        onClick={() => handleNavigateAndScroll("about", navigate, location)}
       >
         About
       </span>
@@ -36,7 +19,7 @@ const NavLinks = () => {
       {/* Smooth scroll to Services */}
       <span
         className="px-4 font-extrabold text-gray-500 hover:text-blue-900 cursor-pointer"
-        onClick={() => handleNavigateAndScroll("services")}
+        onClick={() => handleNavigateAndScroll("services", navigate, location)}
       >
         Services
       </span>
