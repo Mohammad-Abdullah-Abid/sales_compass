@@ -6,7 +6,7 @@ import emailjs from "emailjs-com";
 import Notiflix from "notiflix";
 
 const DemoProduct = (props) => {
-  useDocTitle("VertiVision Ventures - Demo our products");
+  useDocTitle("Sales Compass - Demo our products");
   const [isLoading, setIsLoading] = useState(false);
 
   const [firstName, setFirstName] = useState("");
@@ -224,11 +224,9 @@ const DemoProduct = (props) => {
                   type="submit"
                   id="submitBtn"
                   disabled={isLoading}
-                  className={`${
-                    isLoading ? "disabled" : ""
-                  } uppercase text-sm font-bold tracking-wide bg-gray-500 ${
-                    !isLoading ? " hover:bg-blue-900" : ""
-                  }  text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline`}
+                  className={`${isLoading ? "disabled" : ""
+                    } uppercase text-sm font-bold tracking-wide bg-gray-500 ${!isLoading ? " hover:bg-blue-900" : ""
+                    }  text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline`}
                 >
                   {isLoading ? "Sending..." : "Send Message"}
                 </button>
@@ -259,7 +257,7 @@ const DemoProduct = (props) => {
                   <div className="mt-5">
                     <h2 className="text-2xl">Send an E-mail</h2>
                     <p className="text-gray-400">
-                      contact@vertivisionventures.com
+                      contact@salescompass.com
                     </p>
                   </div>
                 </div>

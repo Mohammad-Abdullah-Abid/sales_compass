@@ -26,7 +26,7 @@ function App() {
     });
   }, []);
 
-  useDocTitle("VertiVision Ventures | Web and Mobile Application Pioneers");
+  useDocTitle("Sales Compass - Home");
 
   return (
     <>

@@ -7,7 +7,7 @@ import { useDocTitle } from "../components/CustomHook";
 import Notiflix from "notiflix";
 
 const Contact = () => {
-  useDocTitle("VertiVision Ventures - Send us a message");
+  useDocTitle("Sales Compass - Send us a message");
   const [isLoading, setIsLoading] = useState(false);
 
   const [firstName, setFirstName] = useState("");
@@ -143,11 +143,9 @@ const Contact = () => {
                   type="submit"
                   disabled={isLoading}
                   id="submitBtn"
-                  className={`${
-                    isLoading ? "disabled" : ""
-                  } uppercase text-sm font-bold tracking-wide bg-gray-500 ${
-                    !isLoading ? "hover:bg-blue-900" : ""
-                  }  text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline`}
+                  className={`${isLoading ? "disabled" : ""
+                    } uppercase text-sm font-bold tracking-wide bg-gray-500 ${!isLoading ? "hover:bg-blue-900" : ""
+                    }  text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline`}
                 >
                   {isLoading ? "Sending..." : "Send Message"}
                 </button>
@@ -178,7 +176,7 @@ const Contact = () => {
                   <div className="mt-5">
                     <h2 className="text-2xl">Send an E-mail</h2>
                     <p className="text-gray-400">
-                      contact@vertivisionventures.com
+                      contact@salescompass.com
                     </p>
                   </div>
                 </div>

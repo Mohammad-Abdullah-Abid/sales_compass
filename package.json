@@ -1,8 +1,8 @@
 {
-  "name": "vertivisionventures",
+  "name": "salescompass",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vertivisionventures.com/",
+  "homepage": "https://salescompass.com/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.1",
