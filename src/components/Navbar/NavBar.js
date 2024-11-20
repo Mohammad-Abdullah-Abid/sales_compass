@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import NavLinks from "../Navbar/NavLinks";
-import logo from "D:/New folder/sales_compass/src/images/logo.png"
+import logo from "../../images/logo.png";
 
 const NavBar = () => {
   const [top, setTop] = useState(true);
@@ -20,9 +20,8 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${
-        !top && "bg-white shadow-lg"
-      }`}
+      className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top && "bg-white shadow-lg"
+        }`}
     >
       <div className="flex flex-row items-center justify-between py-2">
         {/* Logo Section */}
@@ -74,9 +73,8 @@ const NavBar = () => {
           </div>
 
           <div
-            className={`fixed transition-transform duration-300 ease-in-out transit flex justify-center left-0 w-full h-auto rounded-md p-24 bg-white rounded-lg block lg:hidden shadow-xl top-14 ${
-              isOpen ? "block" : "hidden"
-            } `}
+            className={`fixed transition-transform duration-300 ease-in-out transit flex justify-center left-0 w-full h-auto rounded-md p-24 bg-white rounded-lg block lg:hidden shadow-xl top-14 ${isOpen ? "block" : "hidden"
+              } `}
           >
             <div className="flex flex-col space-y-6">
               <NavLinks />
