@@ -26,17 +26,12 @@ const NavLinks = () => {
 
       {/* Direct navigation links */}
       <Link
-        className="px-4 font-extrabold text-gray-500 hover:text-blue-900 cursor-pointer"
+        className="px-4 font-extrabold text-gray-500 cursor-pointer hover:text-blue-900"
         to="/contact"
       >
         Contact Us
       </Link>
-      <Link
-        className="inline-flex items-center justify-center w-auto px-6 py-3 text-white bg-blue-900 shadow-xl hover:bg-blue-800 rounded-xl"
-        to="/get-demo"
-      >
-        Demo our products
-      </Link>
+
     </>
   );
 };
