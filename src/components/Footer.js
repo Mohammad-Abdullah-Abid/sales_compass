@@ -11,11 +11,11 @@ const Footer = () => {
           <div className="grid gap-5 py-8 border-t border-gray-200 sm:grid-cols-12 md:py-12 lg:ml-11">
             {/* 1st block */}
             <div className="col-span-12 lg:col-span-4">
-              <div className="box-border p-8 mx-auto text-center text-gray-600 bg-gray-200 border-b-4 border-blue-900 rounded-lg xl:w-80">
+              <div className="box-border p-8 mx-auto text-center text-white bg-blue-900 border-b-4 border-gray-200 rounded-lg xl:w-80">
                 <h3 className="mb-4 text-4xl font-bold">
                   Sales Compass
                 </h3>
-                <div className="font-medium text-gray-600 text-md">
+                <div className="font-medium text-white text-md">
                   <h5>DaftarKhwan Downtown</h5>
                   <p>Gulberg II,</p>
                   <p>Lahore,</p>
@@ -30,24 +30,24 @@ const Footer = () => {
               <ul className="text-md">
                 <li className="mb-2">
                   <HashLink
-                    to="#"
-                    className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
+                    to="#about"
+                    className="text-[#013289] hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     About
                   </HashLink>
                 </li>
                 <li className="mb-2">
                   <HashLink
-                    to="#"
-                    className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
+                    to="#services"
+                    className="text-[#013289] hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Services
                   </HashLink>
                 </li>
                 <li className="mb-2">
                   <HashLink
-                    to="#"
-                    className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
+                    to="/contact"
+                    className="text-[#013289] hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Contact
                   </HashLink>
@@ -62,28 +62,26 @@ const Footer = () => {
               </h6>
               <ul className="text-md">
                 <li className="mb-2">
-                  <Link
-                    to="#"
-                    className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
+                  <div
+                    
+                    className="text-[#013289] hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Company Establishment Consultation
-                  </Link>
+                  </div>
                 </li>
                 <li className="mb-2">
-                  <Link
-                    to="#"
-                    className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
+                  <div
+                    className="text-[#013289]  hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Business Consultation for Startups
-                  </Link>
+                  </div>
                 </li>
                 <li className="mb-2">
-                  <Link
-                    to="#"
-                    className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out"
+                  <div
+                    className="text-[#013289]  hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Project Management Consultation
-                  </Link>
+                  </div>
                 </li>
                 
               </ul>
