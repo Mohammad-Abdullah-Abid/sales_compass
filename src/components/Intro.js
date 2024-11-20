@@ -1,10 +1,11 @@
 import React from "react";
 import img from "../images/Web-developer.svg";
 import { Link } from "react-router-dom";
+import { Element } from "react-scroll";
 
 const Intro = () => {
   return (
-    <>
+    <Element name="about">
       <div className="max-w-6xl p-2 m-auto md:p-12 h-5/6" id="about">
         <div
           className="flex flex-col-reverse justify-between py-8 lg:flex-row lg:text-left"
@@ -19,17 +20,17 @@ const Intro = () => {
             data-aos-delay="500"
           >
             <h3 className="text-3xl font-bold text-blue-900">
-            Empowering Businesses with Expertise, Integrity, and Results
+              Empowering Businesses with Expertise, Integrity, and Results
             </h3>
             <div>
               <p className="my-3 text-sm font-semibold text-gray-600">
-              At Sale Compass, we are dedicated to empowering entrepreneurs and businesses with strategic insights and practical support tailored to their unique needs. Whether you're starting a new venture or scaling an existing one, our seasoned team of professionals offers personalized consultation services rooted in expertise, collaboration, and integrity. We provide the tools and guidance needed to thrive in today's competitive landscape.
+                At Sale Compass, we are dedicated to empowering entrepreneurs and businesses with strategic insights and practical support tailored to their unique needs. Whether you're starting a new venture or scaling an existing one, our seasoned team of professionals offers personalized consultation services rooted in expertise, collaboration, and integrity. We provide the tools and guidance needed to thrive in today's competitive landscape.
               </p>
             </div>
 
             <div>
               <p className="my-3 text-sm font-semibold text-gray-600">
-              What sets us apart is our commitment to realistic, actionable advice without overpromising. Our team includes PhD-level consultants with deep expertise in project management and business strategy. Clients trust us for our transparency, dedication, and focus on long-term success. Together, we build more than just businesses—we build futures.
+                What sets us apart is our commitment to realistic, actionable advice without overpromising. Our team includes PhD-level consultants with deep expertise in project management and business strategy. Clients trust us for our transparency, dedication, and focus on long-term success. Together, we build more than just businesses—we build futures.
               </p>
             </div>
             <Link
@@ -53,7 +54,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-    </>
+    </Element>
   );
 };
 
