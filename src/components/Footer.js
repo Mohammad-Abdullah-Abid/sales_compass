@@ -63,27 +63,27 @@ const Footer = () => {
               <ul className="text-md">
                 <li className="mb-2">
                   <div
-                    
-                    className="text-[#013289] hover:tracking-wider transition duration-250 ease-in-out"
+
+                    className="text-[#013289]"
                   >
                     Company Establishment Consultation
                   </div>
                 </li>
                 <li className="mb-2">
                   <div
-                    className="text-[#013289]  hover:tracking-wider transition duration-250 ease-in-out"
+                    className="text-[#013289]"
                   >
                     Business Consultation for Startups
                   </div>
                 </li>
                 <li className="mb-2">
                   <div
-                    className="text-[#013289]  hover:tracking-wider transition duration-250 ease-in-out"
+                    className="text-[#013289]"
                   >
                     Project Management Consultation
                   </div>
                 </li>
-                
+
               </ul>
             </div>
 
