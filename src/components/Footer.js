@@ -1,8 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { useNavigate, useLocation, Link } from "react-router-dom"; // Navigation and routing
+import { handleNavigateAndScroll } from "../utils/scrollUtils";
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
   return (
     <>
       <footer>
@@ -29,28 +33,28 @@ const Footer = () => {
               <h6 className="text-[#013289] text-xl font-bold mb-4">LINKS</h6>
               <ul className="text-md">
                 <li className="mb-2">
-                  <HashLink
-                    to="#about"
-                    className="text-[#013289] hover:tracking-wider transition duration-250 ease-in-out"
+                  <div
+                    className="text-[#013289] hover:tracking-wider transition duration-250 ease-in-out hover:text-blue-900 cursor-pointer"
+                    onClick={() => handleNavigateAndScroll("about", navigate, location)}
                   >
                     About
-                  </HashLink>
+                  </div>
                 </li>
                 <li className="mb-2">
-                  <HashLink
-                    to="#services"
-                    className="text-[#013289] hover:tracking-wider transition duration-250 ease-in-out"
+                  <div
+                    className="text-[#013289] hover:tracking-wider transition duration-250 ease-in-out hover:text-blue-900 cursor-pointer"
+                    onClick={() => handleNavigateAndScroll("services", navigate, location)}
                   >
                     Services
-                  </HashLink>
+                  </div>
                 </li>
                 <li className="mb-2">
-                  <HashLink
+                  <Link
                     to="/contact"
                     className="text-[#013289] hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Contact
-                  </HashLink>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -135,9 +139,9 @@ const Footer = () => {
             <div className="w-full px-4 py-2 mx-auto text-center md:w-4/12">
               <div className="py-1 text-sm font-semibold text-gray-200">
                 Copyright &copy; {new Date().getFullYear()}{" "}
-                <HashLink to="#" className=" hover:text-gray-900">
+                <Link to="#" className=" hover:text-gray-900">
                   Sales Compass
-                </HashLink>
+                </Link>
                 . All rights reserved.
               </div>
             </div>
