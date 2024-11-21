@@ -2,8 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/Navbar/NavBar";
 import heroImg from "../images/web-dev.svg";
+import { handleNavigateAndScroll } from "../utils/scrollUtils";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <>
       <div className="hero" id="hero">
@@ -22,11 +26,11 @@ const Hero = () => {
               data-aos-delay="200"
             >
               <h1 className="mb-5 text-3xl font-bold text-blue-900 md:text-5xl">
-              Empowering businesses with tailored solutions to scale and succeed.
+                Empowering businesses with tailored solutions to scale and succeed.
                 {/* Bespoke software solutions for your unique business needs */}
               </h1>
               <div className="mb-5 text-xl font-semibold tracking-tight text-gray-500">
-              We provide expert guidance, actionable strategies, and innovative digital tools to help you thrive.
+                We provide expert guidance, actionable strategies, and innovative digital tools to help you thrive.
               </div>
               <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                 {/* <Link to="/contact" className="inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg text-white bg-blue-900 shadow-xl hover:bg-blue-800 rounded-2xl sm:w-auto sm:mb-0">
@@ -51,9 +55,10 @@ const Hero = () => {
                     ></path>
                   </svg>
                 </Link>
-                <a
+                <span
                   href="#about"
                   className="inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg text-white bg-gray-500 shadow-xl hover:bg-gray-400 rounded-2xl sm:w-auto sm:mb-0"
+                  onClick={() => handleNavigateAndScroll("about", navigate, location)}
                 >
                   Learn More
                   <svg
@@ -70,7 +75,7 @@ const Hero = () => {
                       d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
                     ></path>
                   </svg>
-                </a>
+                </span>
               </div>
             </div>
             <div
