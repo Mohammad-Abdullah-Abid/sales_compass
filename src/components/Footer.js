@@ -87,6 +87,20 @@ const Footer = () => {
                     Project Management Consultation
                   </div>
                 </li>
+                <li className="mb-2">
+                  <div
+                    className="text-[#013289]"
+                  >
+                    Mobile App Development
+                  </div>
+                </li>
+                <li className="mb-2">
+                  <div
+                    className="text-[#013289]"
+                  >
+                    Website Development
+                  </div>
+                </li>
 
               </ul>
             </div>

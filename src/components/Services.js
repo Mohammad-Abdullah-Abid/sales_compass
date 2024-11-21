@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../images/1.svg";
-import img2 from "../images/app.svg";
+// import img2 from "../images/app.svg";
 import img3 from "../images/2.svg";
 import img4 from "../images/3.svg";
 import collaboration from "../images/collaboration.svg"
