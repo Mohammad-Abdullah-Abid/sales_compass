@@ -1,0 +1,42 @@
+name: CI/CD for React App
+
+on:
+  push:
+    branches:
+      - master   # Trigger on push to master branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # Specify the Node version you want to use
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the app
+      run: npm run build
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Deploy to Hostinger via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4
+      with:
+        ftp-server: ${{ secrets.FTP_SERVER }}   # Set up the FTP server URL in GitHub Secrets
+        ftp-username: ${{ secrets.FTP_USERNAME }}  # Set up FTP username in GitHub Secrets
+        ftp-password: ${{ secrets.FTP_PASSWORD }}  # Set up FTP password in GitHub Secrets
+        local-dir: ./build/    # Path to your built React app
+        remote-dir: /public_html/salescompassdemo/   # The folder on your Hostinger server
