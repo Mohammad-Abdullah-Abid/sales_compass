@@ -35,9 +35,9 @@ jobs:
     - name: Deploy to Hostinger via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        ftp-server: ${{ secrets.FTP_SERVER }}   # Set up the FTP server URL in GitHub Secrets
-        ftp-username: ${{ secrets.FTP_USERNAME }}  # Set up FTP username in GitHub Secrets
-        ftp-password: ${{ secrets.FTP_PASSWORD }}  # Set up FTP password in GitHub Secrets
+        server: ${{ secrets.FTP_SERVER }}   # Set up the FTP server URL in GitHub Secrets
+        username: ${{ secrets.FTP_USERNAME }}  # Set up FTP username in GitHub Secrets
+        password: ${{ secrets.FTP_PASSWORD }}  # Set up FTP password in GitHub Secrets
         local-dir: ./build/    # Path to your built React app
         remote-dir: /public_html/salescompassdemo/   # The folder on your Hostinger server
         debug: true
