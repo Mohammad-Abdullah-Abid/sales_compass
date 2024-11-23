@@ -38,6 +38,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}   # Set up the FTP server URL in GitHub Secrets
         username: ${{ secrets.FTP_USERNAME }}  # Set up FTP username in GitHub Secrets
         password: ${{ secrets.FTP_PASSWORD }}  # Set up FTP password in GitHub Secrets
-        local-dir: ./build/    # Path to your built React app
         remote-dir: /public_html/salescompassdemo/   # The folder on your Hostinger server
         debug: true
