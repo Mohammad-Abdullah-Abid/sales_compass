@@ -7,7 +7,7 @@ import { useDocTitle } from "../components/CustomHook";
 import Notiflix from "notiflix";
 
 const Contact = () => {
-  useDocTitle("Sales Compass - Send us a message");
+  useDocTitle("sale Compass - Send us a message");
   const [isLoading, setIsLoading] = useState(false);
 
   const [firstName, setFirstName] = useState("");
@@ -34,10 +34,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_o0q4i1h",
-        "template_azt8ywj",
+        "service_j5piclp",
+        "template_kl7mbbf",
         form.current,
-        "EZmmsn7eN1p81tZp7"
+        "MDleq_EZ7vEa3sNer"
       )
       .then(
         (result) => {
@@ -176,7 +176,7 @@ const Contact = () => {
                   <div className="mt-5">
                     <h2 className="text-2xl">Send an E-mail</h2>
                     <p className="text-gray-400">
-                      contact@salescompass.com
+                      contact@salecompass.com
                     </p>
                   </div>
                 </div>
