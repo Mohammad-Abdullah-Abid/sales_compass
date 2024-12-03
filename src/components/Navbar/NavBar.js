@@ -36,7 +36,7 @@ const NavBar = () => {
 
           </div>
           <h1 className="text-2xl font-extrabold text-blue-900 md:text-4xl">
-            Sales Compass
+            Sale Compass
           </h1>
         </Link>
 
