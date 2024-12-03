@@ -20,10 +20,10 @@ const Footer = () => {
                   Sales Compass
                 </h3>
                 <div className="font-medium text-white text-md">
-                  <h5>DaftarKhwan Downtown</h5>
-                  <p>Gulberg II,</p>
-                  <p>Lahore,</p>
-                  <p>Pakistan.</p>
+                  <h5>Meydan Grandstand</h5>
+                  <p>6th floor, Meydan Road</p>
+                  <p>Nad Al Sheba</p>
+                  <p>Dubai, U.A.E</p>
                 </div>
               </div>
             </div>

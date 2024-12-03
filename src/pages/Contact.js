@@ -160,7 +160,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl">Office Address</h2>
-                  <p className="text-gray-400">Gulberg II, Lahore, Pakistan</p>
+                  <p className="text-gray-400">Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E</p>
                 </div>
               </div>
 
@@ -176,7 +176,7 @@ const Contact = () => {
                   <div className="mt-5">
                     <h2 className="text-2xl">Send an E-mail</h2>
                     <p className="text-gray-400">
-                      contact@salecompass.com
+                      contact@salecompass.ae
                     </p>
                   </div>
                 </div>
