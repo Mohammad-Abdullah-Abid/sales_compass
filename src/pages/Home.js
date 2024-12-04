@@ -10,7 +10,7 @@ import { useDocTitle } from "../components/CustomHook";
 
 const Home = () => {
 
-  useDocTitle("Sales Compass - Home");
+  useDocTitle("Sale Compass - Home");
   return (
     <>
       <Hero />

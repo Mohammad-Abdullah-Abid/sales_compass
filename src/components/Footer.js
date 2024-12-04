@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="col-span-12 lg:col-span-4">
               <div className="box-border p-8 mx-auto text-center text-white bg-blue-900 border-b-4 border-gray-200 rounded-lg xl:w-80">
                 <h3 className="mb-4 text-4xl font-bold">
-                  Sales Compass
+                  Sale Compass
                 </h3>
                 <div className="font-medium text-white text-md">
                   <h5>Meydan Grandstand</h5>
@@ -154,7 +154,7 @@ const Footer = () => {
               <div className="py-1 text-sm font-semibold text-gray-200">
                 Copyright &copy; {new Date().getFullYear()}{" "}
                 <Link to="#" className=" hover:text-gray-900">
-                  Sales Compass
+                  Sale Compass
                 </Link>
                 . All rights reserved.
               </div>

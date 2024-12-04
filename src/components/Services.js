@@ -153,42 +153,42 @@ const Services = () => {
 
         </section>
 
-        <section>
-          <div className="h-auto max-w-6xl px-4 mx-auto sm:px-6 lg:px-12">
-            <div
-              className="flex flex-col-reverse py-8 lg:flex-row lg:text-left"
-              data-aos="zoom-out"
-            >
-              <div className="flex flex-col justify-center w-full px-4 lg:w-1/2 lg:px-4">
-                <div className="mb-4 text-blue-900">
-                  <img src={build} alt="build" className="h-auto max-w-full" />
-                </div>
-                <h3 className="text-2xl font-bold text-blue-900 lg:text-3xl">
-                  We <span className="font-black">Build</span>
-                </h3>
-                <div>
-                  <p className="text-lg font-semibold text-gray-600 lg:text-xl">
-                    At Sale Compass, collaboration is at the heart of everything we do.
-                    We work closely with our clients to understand their vision, challenges, and goals. By fostering a partnership built on trust and communication, we deliver solutions that are tailored to your unique needs, ensuring your journey to success is seamless and efficient.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col justify-center w-full px-4 lg:w-1/2 lg:px-4">
-                <div className="mb-4 text-blue-900">
-                  <img src={collaboration} alt="collaborate" className="h-auto max-w-full" />
-                </div>
-                <h3 className="text-2xl font-bold text-blue-900 lg:text-3xl">
-                  We <span className="font-black">Collaborate</span>
-                </h3>
-                <div>
-                  <p className="text-lg font-semibold text-gray-600 lg:text-xl">
-                    We don’t just provide services—we create foundations for growth. From innovative strategies to custom solutions, we build the tools, processes, and frameworks that empower businesses to scale and succeed. With a focus on long-term impact, we help transform ideas into sustainable achievements.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+<section>
+  <div className="h-auto max-w-6xl px-4 mx-auto sm:px-6 lg:px-12">
+    <div
+      className="flex flex-col-reverse py-8 lg:flex-row lg:text-left"
+      data-aos="zoom-out"
+    >
+      <div className="flex flex-col justify-center w-full px-4 lg:w-1/2 lg:px-4">
+        <div className="mb-4 text-blue-900 text-center md:text-left">
+          <img src={build} alt="build" className="h-auto max-w-full md:mx-0 mx-auto" />
+        </div>
+        <h3 className="text-2xl font-bold text-blue-900 lg:text-3xl text-center md:text-left mb-4 md:mb-2">
+          We <span className="font-black">Build</span>
+        </h3>
+        <div>
+          <p className="text-lg font-semibold text-gray-600 lg:text-xl text-center md:text-justify md:text-left">
+            At Sale Compass, collaboration is at the heart of everything we do.
+            We work closely with our clients to understand their vision, challenges, and goals. By fostering a partnership built on trust and communication, we deliver solutions that are tailored to your unique needs, ensuring your journey to success is seamless and efficient.
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col justify-center w-full px-4 lg:w-1/2 lg:px-4">
+        <div className="mb-4 text-blue-900 text-center md:text-left">
+          <img src={collaboration} alt="collaborate" className="h-auto max-w-full md:mx-0 mx-auto" />
+        </div>
+        <h3 className="text-2xl font-bold text-blue-900 lg:text-3xl text-center md:text-left mb-4 md:mb-2">
+          We <span className="font-black">Collaborate</span>
+        </h3>
+        <div>
+          <p className="text-lg font-semibold text-gray-600 lg:text-xl text-center md:text-justify md:text-left">
+            We don’t just provide services—we create foundations for growth. From innovative strategies to custom solutions, we build the tools, processes, and frameworks that empower businesses to scale and succeed. With a focus on long-term impact, we help transform ideas into sustainable achievements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       </div>
     </Element>
